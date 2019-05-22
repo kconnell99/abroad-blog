@@ -3,7 +3,7 @@ import NavBarItem from './NavBarItem';
 
 export default function NavBar(props){
     const options = ["HOME","ABOUT","INDEX","MAP","PHOTOS","CONTACT"];
-    const layoutOptions = options.map(item => <NavBarItem>{item}</NavBarItem>)
+    const layoutOptions = options.map(item => <NavBarItem key = {item}>{item}</NavBarItem>)
     
     return(
         <div>

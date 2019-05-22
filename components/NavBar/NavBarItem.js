@@ -1,10 +1,16 @@
 import React from 'react';
+import Link from 'next/link';
 
 const NavBarItem = (props) => {
-    console.log(props);
+    const linkName = props.children.toLowerCase()
+    
     return (
       <div>
-       <p>{props.children}</p>
+       <Link href ={'/' + linkName}>
+        <a>
+            {props.children}
+        </a>
+       </Link>
       </div>
     );
   };
