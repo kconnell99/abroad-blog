@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -110,7 +110,7 @@ var _jsxFileName = "/Users/katherineconnell/Projects/abroad-blog/components/NavB
 
 
 function NavBar(props) {
-  var options = ["HOME", "ABOUT", "INDEX", "MAP", "PHOTOS", "CONTACT"];
+  var options = ["HOME", "ABOUT", "MAP", "PHOTOS", "CONTACT"];
   var layoutOptions = options.map(function (item) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavBarItem__WEBPACK_IMPORTED_MODULE_1__["default"], {
       key: item,
@@ -131,6 +131,12 @@ function NavBar(props) {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
+    },
+    __self: this
+  }, "BLOG TITLE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
     },
     __self: this
   }, props.children), layoutOptions);
@@ -772,7 +778,7 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

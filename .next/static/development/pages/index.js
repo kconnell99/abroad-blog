@@ -17,7 +17,7 @@ var _jsxFileName = "/Users/katherineconnell/Projects/abroad-blog/components/NavB
 
 
 function NavBar(props) {
-  var options = ["HOME", "ABOUT", "INDEX", "MAP", "PHOTOS", "CONTACT"];
+  var options = ["HOME", "ABOUT", "MAP", "PHOTOS", "CONTACT"];
   var layoutOptions = options.map(function (item) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavBarItem__WEBPACK_IMPORTED_MODULE_1__["default"], {
       key: item,
@@ -38,6 +38,12 @@ function NavBar(props) {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
+    },
+    __self: this
+  }, "BLOG TITLE"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
     },
     __self: this
   }, props.children), layoutOptions);
@@ -9779,7 +9785,7 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 0:
+/***/ 2:
 /*!****************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Findex.js ***!
   \****************************************************************************************************************************************/
@@ -9802,5 +9808,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
