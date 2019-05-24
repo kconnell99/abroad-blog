@@ -6,7 +6,7 @@ const About = () => {
 
     const client = contentful.createClient({
     space: '7nio64lc6xum',
-    environment: '<environment_id>', // defaults to 'master' if not set
+    environment: 'master', // defaults to 'master' if not set
     accessToken: '2BRt1UfcIexpHhwfkP98K0ydPgIB8vATWysOcDrOI78'
     })
 
