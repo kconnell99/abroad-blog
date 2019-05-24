@@ -3,7 +3,6 @@ import Link from 'next/link';
 
 const NavBarItem = (props) => {
     const linkName = props.children.toLowerCase()
-    
     return (
       <div>
        <Link href ={'/' + linkName}>
