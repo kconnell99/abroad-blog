@@ -25,8 +25,8 @@ var PostCard = function PostCard(_ref) {
       postCreationDate = _post$fields.postCreationDate,
       postBody = _post$fields.postBody;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/test-post-2"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    href: "test-post-2"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: postMainImage.fields.file.url
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, postTitle), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, postCreationDate)));
 };
@@ -36,4 +36,4 @@ var PostCard = function PostCard(_ref) {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.6dd4b4bec75e2718b167.hot-update.js.map
+//# sourceMappingURL=index.js.3b39fa1692be0d0ad43a.hot-update.js.map
