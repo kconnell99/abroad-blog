@@ -131,15 +131,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var PostCard = function PostCard(_ref) {
-  var post = _ref.post,
-      handleClick = _ref.handleClick;
+  var post = _ref.post;
   var _post$fields = post.fields,
       postTitle = _post$fields.postTitle,
       postMainImage = _post$fields.postMainImage,
       postCreationDate = _post$fields.postCreationDate,
-      postBody = _post$fields.postBody;
+      postUrl = _post$fields.postUrl;
+  console.log(postUrl);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "test-post-2"
+    href: postUrl
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: postMainImage.fields.file.url
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, postTitle), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, postCreationDate)));

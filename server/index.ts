@@ -24,7 +24,7 @@ app.prepare().then(async () => {
     const allPosts = await makeCMSContentRequest('blogPost');
     // const postURLs = allPosts.map((post:any) => post.fields.postTitle.replace(/\s+/g, '-').toLowerCase());
     // const doesExist = !!postURLs.find((postURL:string)=>postURL===req.params.slug);
-    const post = allPosts.find((post:any)=>post.fields.postTitle.replace(/\s+/g, '-').toLowerCase()===req.params.slug);
+    const post = allPosts.find((post:any)=>post.fields.postUrl===req.params.slug);
 
     if(!!post){
       app.render(req, res, '/post',{post})

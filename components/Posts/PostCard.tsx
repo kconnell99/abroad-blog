@@ -1,11 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 
-const PostCard = ({post,handleClick}:any) => {
-    const {postTitle,postMainImage,postCreationDate,postBody} = post.fields
+const PostCard = ({post}:any) => {
+    const {postTitle,postMainImage,postCreationDate,postUrl} = post.fields
 
+    console.log(postUrl);
     return(
-        <Link href="test-post-2">
+        <Link href={postUrl}>
             <a>
                 <div>
                     <img src = {postMainImage.fields.file.url}/>
