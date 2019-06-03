@@ -18,6 +18,14 @@
     "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
+    ],
+    "/photos": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/post": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }

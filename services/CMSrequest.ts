@@ -26,7 +26,6 @@ export const makeCMSContentRequest = async(contentID:any)=>{
         const {items} = await client.getEntries({
             'content_type': contentID,
           });
-
           return items;
     }catch(error){
         console.error(error);

@@ -54,60 +54,58 @@ function NavBar() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/katherineconnell/Projects/abroad-blog/components/NavBar/NavBarItem.tsx";
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 
 
+
+
+
+var handleClick = function handleClick(key) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    style: tooltipStyle
+  }, "Email: ktconnell99@gmail.com");
+};
+
+var tooltipStyle = {// display: this.state.hover ? 'block' : 'none'
+};
 
 var NavBarItem = function NavBarItem(props) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
+      contactIsShown = _useState2[0],
+      setContactIsShown = _useState2[1];
+
+  var hide = function hide() {
+    return setContactIsShown(false);
+  };
+
+  var show = function show() {
+    return setContactIsShown(true);
+  };
+
   var linkName = props.children.toLowerCase();
 
   if (linkName === 'home') {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 8
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: './',
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 10
-      },
-      __self: this
-    }, props.children)));
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      href: './'
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", null, props.children)));
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: '/' + linkName,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, props.children)));
+  if (linkName === 'contact') {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+      onClick: show
+    }, props.children), contactIsShown && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, "Email: ktconnell99@gmail.com", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+      onClick: hide
+    }, "X")));
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: '/' + linkName
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", null, props.children)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (NavBarItem);
@@ -162,43 +160,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _PostCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PostCard */ "./components/Posts/PostCard.tsx");
-var _jsxFileName = "/Users/katherineconnell/Projects/abroad-blog/components/Posts/PostGrid.tsx";
 
-
-
-var _handleClick = function handleClick(post) {
-  console.log(post.post.fields.postTitle.replace(/\s+/g, '-').toLowerCase()); // <Link href = {'/' + post.post.fields.postTitle.replace(/\s+/g, '-').toLowerCase()}/>
-};
 
 function PostGrid(_ref) {
   var posts = _ref.posts;
-  console.log(posts);
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, "BLOG TITLE"), posts && posts.data.map(function (post) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, posts && posts.data.map(function (post) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PostCard__WEBPACK_IMPORTED_MODULE_1__["default"], {
       key: post.sys.id,
-      post: post,
-      handleClick: function handleClick() {
-        _handleClick({
-          post: post
-        });
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 16
-      },
-      __self: this
+      post: post
     });
   }));
 }
