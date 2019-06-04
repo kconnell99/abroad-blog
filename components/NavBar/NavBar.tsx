@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import NavBarItem from './NavBarItem';
 
 export default function NavBar(){
@@ -7,7 +8,9 @@ export default function NavBar(){
 
     return(
         <div>
-            <h1>BLOG TITLE</h1>
+            <Link href ={'./'}>
+                <h1>BLOG TITLE</h1>
+            </Link>
            {layoutOptions} 
         </div>
     )

@@ -15,12 +15,6 @@ export const makeCMSEntryRequest = async(entryID:any) => {
     }catch(error){
         console.error(error);
     };
-    // .then((entry) => {
-    //     // console.log(entry);
-    //     // console.log(entry.fields.blogTitle)
-    //     return entry;
-    // })
-    // .catch(console.error)
 }
 
 export const makeCMSContentRequest = async(contentID:any)=>{

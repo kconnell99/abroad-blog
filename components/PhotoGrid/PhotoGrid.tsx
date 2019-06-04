@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default function PhotoGrid({photos}:any){
-    console.log(photos)
     return(
         <div>
             {photos && photos.data.map((photo:any)=>

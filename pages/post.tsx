@@ -5,7 +5,6 @@ import {makeCMSContentRequest} from '../services/CMSrequest';
 
 const Post = (data: any) => {
     const {postTitle,postMainImage,postCreationDate,postBody} = data
-    console.log(data)
     return(
         data && 
         <div>
