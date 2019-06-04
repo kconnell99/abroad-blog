@@ -1,8 +1,10 @@
 import * as express from 'express';
 import * as next from 'next';
 import * as compression from 'compression';
+import * as dotenv from 'dotenv';
 import { makeCMSContentRequest } from '../services/CMSrequest';
 
+dotenv.config()
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
@@ -47,3 +49,4 @@ app.prepare().then(async () => {
   console.error(ex.stack)
   process.exit(1)
 })
+
