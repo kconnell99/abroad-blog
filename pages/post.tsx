@@ -20,12 +20,12 @@ const Post = (data: any) => {
                 }}>
                     <ImageContainer src = {postMainImage.fields.file.url}/>
                 </PhotoContainer>
-                <h3>
+                <PostDateContainer>
                     {postCreationDate}
-                </h3>
-                <p>
+                </PostDateContainer>
+                <PostBodyContainer>
                     {postBody}
-                </p>  
+                </PostBodyContainer>  
         </div>
     )
 }
@@ -33,7 +33,14 @@ const Post = (data: any) => {
 const PostTitleContainer=styled.h2`
     text-align: center;
 `
-
+const PostDateContainer=styled.h3`
+    text-align: center;
+`
+const PostBodyContainer=styled.p`
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+`
 
 Post.getInitialProps = (context:any) => context.query.post.fields;
 
