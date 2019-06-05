@@ -1,6 +1,8 @@
 import NavBar from '../components/NavBar/NavBar';
 import React from 'react';
-import {makeCMSContentRequest} from '../services/CMSrequest';
+import styled from '@emotion/styled';
+import {PhotoContainer} from '../components/PhotoGrid/PhotoGrid';
+import {ImageContainer} from '../components/PhotoGrid/PhotoGrid';
 
 
 const Post = (data: any) => {
@@ -9,12 +11,15 @@ const Post = (data: any) => {
         data && 
         <div>
             <NavBar/>
-                <h2>
+                <PostTitleContainer>
                     {postTitle}
-                </h2>
-                <div>
-                    <img src = {postMainImage.fields.file.url}/>
-                </div>
+                </PostTitleContainer>
+                <PhotoContainer style={{
+                    margin: "auto",
+                    width: "50%",
+                }}>
+                    <ImageContainer src = {postMainImage.fields.file.url}/>
+                </PhotoContainer>
                 <h3>
                     {postCreationDate}
                 </h3>
@@ -24,6 +29,11 @@ const Post = (data: any) => {
         </div>
     )
 }
+
+const PostTitleContainer=styled.h2`
+    text-align: center;
+`
+
 
 Post.getInitialProps = (context:any) => context.query.post.fields;
 

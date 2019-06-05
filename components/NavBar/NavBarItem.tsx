@@ -1,18 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import {useState} from 'react';
+import styled from '@emotion/styled';
 
-const handleClick = (key: any) =>{
-  return(
-    <div style={tooltipStyle}>
-      Email: ktconnell99@gmail.com
-    </div>
-  )
-}
-
-const tooltipStyle = {
-  // display: this.state.hover ? 'block' : 'none'
-}
 
 const NavBarItem = (props:any) => {
   
@@ -25,9 +15,11 @@ const NavBarItem = (props:any) => {
     return (
       <div>
         <Link href ={'./'} >
-        <a>
-          {props.children}
-        </a>
+        <NavBarItemContainer>
+          <a>
+            {props.children}
+          </a>
+        </NavBarItemContainer>
       </Link>
       </div>
     )
@@ -37,7 +29,7 @@ const NavBarItem = (props:any) => {
     
     return (
       <div>
-        <button onClick = {show}>{props.children}</button>
+          <NavBarButtonContainer onClick = {show}>{props.children}</NavBarButtonContainer>
         {contactIsShown && 
         <div>
           Email: ktconnell99@gmail.com
@@ -49,12 +41,42 @@ const NavBarItem = (props:any) => {
   return (
     <div>
       <Link href ={'/' + linkName}>
-      <a>
+      <NavBarItemContainer>
+        <a>
           {props.children}
-      </a>
+        </a>
+      </NavBarItemContainer>
       </Link>
     </div>
   );
 };
 
-  export default NavBarItem
+const NavBarItemContainer = styled.div`
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  transition: all .4s;
+  text-align: center;
+  &:hover{
+    background: #bccbde;
+  }
+`
+const NavBarButtonContainer = styled.button`
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  transition: all .4s;
+  text-align: center;
+  &:hover{
+    background: #bccbde;
+  }
+`
+
+
+
+export default NavBarItem
