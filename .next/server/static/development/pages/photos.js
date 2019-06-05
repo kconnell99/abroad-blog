@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -114,7 +114,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject3() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    text-align: center;\n    color: white;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    text-align: center;\n    color: white;\n    padding: 25px;\n    margin: 0px;\n    cursor: pointer;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -124,7 +124,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: 100%;\n    background: #c2dde6;\n    margin-bottom: 20px;\n    display: flex;\n    float: bottom;\n    flex-direction: row;\n    justify-content: space-around;\n    margin-top: 85px;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: 100%;\n    padding: 25px;\n    display: flex;\n    float: bottom;\n    flex-direction: row;\n    justify-content: space-around;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -134,7 +134,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    background: #c2dde6;\n    width: 100vw;\n  height: 200px;\n  border-bottom: 5px solid #bccbde;\n  display: relative;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    background: #c2dde6;\n    width: 100vw;\n    height: 200px;\n    display: relative;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -184,6 +184,26 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+function _templateObject4() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  text-align: center;  \n  background-color: white;\n  position: fixed;\n  width: 500px;\n  height: 200px;\n  top: 50%;\n  left: 50%;\n  margin-top: -100px; /* Negative half of height. */\n  margin-left: -250px; /* Negative half of width. */\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])([" \n  position: fixed;\n  width: 100%;  \n  height: 100%;  \n  top: 0;  \n  left: 0;  \n  right: 0;  \n  bottom: 0;  \n  margin: auto;  \n  background-color: rgba(0,0,0, 0.5);   \n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject2() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  border: none;\n  background: transparent;\n  color: white;\n  cursor: pointer;\n  padding: 10px;\n  width: 100%;\n  transition: all .4s;\n  text-align: center;\n  &:hover{\n    background: #bccbde;\n  }\n"]);
 
@@ -195,7 +215,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  color: white;\n  text-decoration: none;\n  cursor: pointer;\n  padding: 10px;\n  width: 100%;\n  transition: all .4s;\n  text-align: center;\n  &:hover{\n    background: #bccbde;\n  }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  color: white;\n  text-decoration: none;\n  cursor: pointer;\n  padding: 10px;\n  width: 100%;\n  display: inline-block;\n  transition: all .4s;\n  text-align: center;\n  &:hover{\n    background: #bccbde;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -234,9 +254,9 @@ var NavBarItem = function NavBarItem(props) {
   if (linkName === 'contact') {
     return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(NavBarButtonContainer, {
       onClick: show
-    }, props.children), contactIsShown && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, "Email: ktconnell99@gmail.com", react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
+    }, props.children), contactIsShown && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(PopupBackgroundContainer, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(PopupContent, null, "Email: ktconnell99@gmail.com", react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
       onClick: hide
-    }, "X")));
+    }, "X"))));
   }
 
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -246,6 +266,8 @@ var NavBarItem = function NavBarItem(props) {
 
 var NavBarItemContainer = _emotion_styled__WEBPACK_IMPORTED_MODULE_4___default.a.div(_templateObject());
 var NavBarButtonContainer = _emotion_styled__WEBPACK_IMPORTED_MODULE_4___default.a.button(_templateObject2());
+var PopupBackgroundContainer = _emotion_styled__WEBPACK_IMPORTED_MODULE_4___default.a.div(_templateObject3());
+var PopupContent = _emotion_styled__WEBPACK_IMPORTED_MODULE_4___default.a.div(_templateObject4());
 /* harmony default export */ __webpack_exports__["default"] = (NavBarItem);
 
 /***/ }),
@@ -1306,7 +1328,7 @@ function () {
 
 /***/ }),
 
-/***/ 6:
+/***/ 5:
 /*!********************************!*\
   !*** multi ./pages/photos.tsx ***!
   \********************************/

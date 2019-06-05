@@ -26,15 +26,16 @@ const NavBarItem = (props:any) => {
   }
 
   if(linkName === 'contact'){
-    
     return (
       <div>
           <NavBarButtonContainer onClick = {show}>{props.children}</NavBarButtonContainer>
         {contactIsShown && 
-        <div>
-          Email: ktconnell99@gmail.com
-          <button onClick ={hide}>X</button>
-        </div>}
+        <PopupBackgroundContainer>
+          <PopupContent>
+            Email: ktconnell99@gmail.com
+            <button onClick ={hide}>X</button>
+          </PopupContent>
+        </PopupBackgroundContainer>}
       </div>
     );
   }
@@ -57,6 +58,7 @@ const NavBarItemContainer = styled.div`
   cursor: pointer;
   padding: 10px;
   width: 100%;
+  display: inline-block;
   transition: all .4s;
   text-align: center;
   &:hover{
@@ -77,6 +79,28 @@ const NavBarButtonContainer = styled.button`
   }
 `
 
+const PopupBackgroundContainer = styled.div` 
+  position: fixed;
+  width: 100%;  
+  height: 100%;  
+  top: 0;  
+  left: 0;  
+  right: 0;  
+  bottom: 0;  
+  margin: auto;  
+  background-color: rgba(0,0,0, 0.5);   
+`
+const PopupContent=styled.div`
+  text-align: center;  
+  background-color: white;
+  position: fixed;
+  width: 500px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px; /* Negative half of height. */
+  margin-left: -250px; /* Negative half of width. */
+`
 
 
 export default NavBarItem

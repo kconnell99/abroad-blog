@@ -17,6 +17,7 @@ const Post = (data: any) => {
                 <PhotoContainer style={{
                     margin: "auto",
                     width: "50%",
+                    cursor: "auto"
                 }}>
                     <ImageContainer src = {postMainImage.fields.file.url}/>
                 </PhotoContainer>
@@ -30,13 +31,13 @@ const Post = (data: any) => {
     )
 }
 
-const PostTitleContainer=styled.h2`
+export const PostTitleContainer=styled.h2`
     text-align: center;
 `
 const PostDateContainer=styled.h3`
     text-align: center;
 `
-const PostBodyContainer=styled.p`
+export const PostBodyContainer=styled.p`
     text-align: left;
     margin-left: 20%;
     margin-right: 20%;

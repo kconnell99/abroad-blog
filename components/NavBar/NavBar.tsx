@@ -22,23 +22,23 @@ export default function NavBar(){
 const FullNavBarContainer=styled.div`
     background: #c2dde6;
     width: 100vw;
-  height: 200px;
-  border-bottom: 5px solid #bccbde;
-  display: relative;
+    height: 200px;
+    display: relative;
 `
 
 const NavBarItemsContainer = styled.div`
     width: 100%;
-    background: #c2dde6;
-    margin-bottom: 20px;
+    padding: 25px;
     display: flex;
     float: bottom;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 85px;
 `
 
 const NavBarTitle = styled.h1`
     text-align: center;
     color: white;
+    padding: 25px;
+    margin: 0px;
+    cursor: pointer;
 `

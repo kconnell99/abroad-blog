@@ -12,6 +12,7 @@ export default function PostGrid({posts}:any){
 }
 
 const PostGridContainer=styled.div`
+    padding-top: 5%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
