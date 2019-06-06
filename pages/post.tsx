@@ -1,9 +1,7 @@
 import NavBar from '../components/NavBar/NavBar';
 import React from 'react';
 import styled from '@emotion/styled';
-import {PhotoContainer} from '../components/PhotoGrid/PhotoGrid';
-import {ImageContainer} from '../components/PhotoGrid/PhotoGrid';
-
+import {PhotoContainer,ImageContainer} from '../components/PhotoGrid/components';
 
 const Post = (data: any) => {
     const {postTitle,postMainImage,postCreationDate,postBody} = data

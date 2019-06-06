@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import NavBarItem from './NavBarItem';
-import styled from '@emotion/styled';
+import {FullNavBarContainer,NavBarItemsContainer,NavBarTitle} from './components';
 
 export default function NavBar(){
     const options = ["HOME","ABOUT","MAP","PHOTOS","CONTACT"];
@@ -19,26 +19,4 @@ export default function NavBar(){
     )
 }
 
-const FullNavBarContainer=styled.div`
-    background: #c2dde6;
-    width: 100vw;
-    height: 200px;
-    display: relative;
-`
 
-const NavBarItemsContainer = styled.div`
-    width: 100%;
-    padding: 25px;
-    display: flex;
-    float: bottom;
-    flex-direction: row;
-    justify-content: space-around;
-`
-
-const NavBarTitle = styled.h1`
-    text-align: center;
-    color: white;
-    padding: 25px;
-    margin: 0px;
-    cursor: pointer;
-`

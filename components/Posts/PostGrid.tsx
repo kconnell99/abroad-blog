@@ -1,6 +1,6 @@
 import React from 'react';
 import PostCard from './PostCard';
-import styled from '@emotion/styled';
+import {PostGridContainer} from './components';
 
 export default function PostGrid({posts}:any){
     return(
@@ -11,12 +11,6 @@ export default function PostGrid({posts}:any){
     )
 }
 
-const PostGridContainer=styled.div`
-    padding-top: 5%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-`
 
 
 

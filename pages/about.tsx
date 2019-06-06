@@ -1,10 +1,8 @@
 import NavBar from '../components/NavBar/NavBar';
 import React from 'react';
 import {makeCMSEntryRequest} from '../services/CMSrequest';
-import {PhotoContainer} from '../components/PhotoGrid/PhotoGrid';
-import {ImageContainer} from '../components/PhotoGrid/PhotoGrid';
-import {PostBodyContainer} from './post';
-import {PostTitleContainer} from './post';
+import {PhotoContainer, ImageContainer} from '../components/PhotoGrid/components';
+import {PostBodyContainer,PostTitleContainer} from './post';
 
 
 const About = (data: any) => {
