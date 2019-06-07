@@ -25,8 +25,8 @@ export const PopupTextContent=styled.div`
 `
 export const PopupImageContainer=styled.div`
   border: 5px solid white;
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 500px;
+  max-height: 500px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 10px;
@@ -34,11 +34,13 @@ export const PopupImageContainer=styled.div`
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-left: -13.5%;
+  margin-left: -17.5%;
   margin-top: -15%;
 
 `
+export const PopupImageCaption=styled.p`
 
+`
 export const PopupImageContent=styled.img`
   max-width: 100%;
   max-height: 100%;

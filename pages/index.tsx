@@ -3,12 +3,13 @@ import PostGrid from '../components/Posts/PostGrid';
 import {makeCMSContentRequest} from '../services/CMSrequest';
 import React from 'react';
 import styled from '@emotion/styled';
-import { url } from 'inspector';
+import {FilterBar} from '../components/FilterBar/FilterBar';
 
 const Index = (data: any) => {
   return(
     <>
       <NavBar/>
+        <FilterBar/>
         <HomePageContainer>
           <PostGrid posts = {data}/>
         </HomePageContainer>

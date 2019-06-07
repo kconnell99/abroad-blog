@@ -1,7 +1,7 @@
 import React from 'react';
 import {useState} from 'react';
 import {ImageContainer,PhotoContainer,PhotoGridContainer} from './components';
-import {PopupBackgroundContainer,PopupImageContainer,PopupImageContent} from '../Popups/Popups';
+import {PopupImageCaption,PopupBackgroundContainer,PopupImageContainer,PopupImageContent} from '../Popups/Popups';
 
 export default function PhotoGrid({photos}:any){
     const [photoEnlarged,setPhotoEnlarged] = useState(false);
@@ -12,13 +12,13 @@ export default function PhotoGrid({photos}:any){
     }
 
     const showPic=(photo:any)=>{
-        // console.log(photo.fields.photo.fields.description)
         return(
-        <PopupImageContent src = {photo.fields.photo.fields.file.url}/>        
-        )
-        
+            <>
+            <PopupImageContent src = {photo.fields.photo.fields.file.url}/>
+            <PopupImageCaption>{photo.fields.photo.fields.description}</PopupImageCaption>
+            </>
+        )    
     }
-
     return(
         <>
             <PhotoGridContainer>

@@ -6,7 +6,8 @@ export const PhotoContainer=styled.div`
     max-height: 300px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
+    margin-bottom: 12.5px;
+    margin-top: 12.5px;
     padding: 10px;
     margin-left: 5px;
     margin-right: 5px;
@@ -23,4 +24,5 @@ export const ImageContainer = styled.img`
 export const PhotoGridContainer=styled.div`
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 `
