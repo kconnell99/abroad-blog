@@ -4,11 +4,16 @@ import {makeCMSContentRequest} from '../services/CMSrequest';
 import React from 'react';
 import styled from '@emotion/styled';
 import {FilterBar} from '../components/FilterBar/FilterBar';
+import {PostGridTitle} from '../components/Posts/components';
+
 
 const Index = (data: any) => {
   return(
     <>
       <NavBar/>
+        <PostGridTitle>
+          Latest Posts
+        </PostGridTitle>
         <FilterBar/>
         <HomePageContainer>
           <PostGrid posts = {data}/>
@@ -23,7 +28,7 @@ Index.getInitialProps = async() => {
 }
 
 const HomePageContainer=styled.div`
-  background: url(https://images.pexels.com/photos/997719/pexels-photo-997719.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500) no-repeat center center fixed; 
+  background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

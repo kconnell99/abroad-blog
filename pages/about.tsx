@@ -4,7 +4,6 @@ import {makeCMSEntryRequest} from '../services/CMSrequest';
 import {PhotoContainer, ImageContainer} from '../components/PhotoGrid/components';
 import {PostBodyContainer,PostTitleContainer} from './post';
 
-
 const About = (data: any) => {
     const {aboutPageTitle,aboutPageImage,aboutPageText} = data
 

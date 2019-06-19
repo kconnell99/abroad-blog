@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import {useState} from 'react';
 import {PopupBackgroundContainer, PopupTextContent} from '../Popups/Popups';
-import {NavBarItemContainer} from './components';
+import {NavBarItemContainer, NavBarItemText} from './components';
 
 
 const NavBarItem = (props:any) => {
@@ -20,9 +20,9 @@ const NavBarItem = (props:any) => {
       <div>
         <Link href ={'./'} >
         <NavBarItemContainer>
-          <a>
+          <NavBarItemText>
             {props.children}
-          </a>
+          </NavBarItemText>
         </NavBarItemContainer>
       </Link>
       </div>
@@ -32,7 +32,11 @@ const NavBarItem = (props:any) => {
   if(linkName === 'contact'){
     return (
       <div>
-          <NavBarItemContainer onClick = {togglePopup}>{props.children}</NavBarItemContainer>
+          <NavBarItemContainer onClick = {togglePopup}>
+            <NavBarItemText>
+              {props.children}
+            </NavBarItemText>
+          </NavBarItemContainer>
         {contactIsShown && 
         <PopupBackgroundContainer onClick ={togglePopup}>
           <PopupTextContent onClick ={handleChildClick}>
@@ -46,9 +50,9 @@ const NavBarItem = (props:any) => {
     <div>
       <Link href ={'/' + linkName}>
       <NavBarItemContainer>
-        <a>
+        <NavBarItemText>
           {props.children}
-        </a>
+        </NavBarItemText>
       </NavBarItemContainer>
       </Link>
     </div>

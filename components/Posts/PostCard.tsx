@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import {PostContainer,PostImage,PostTitle,PostDate} from './components'
+import {PostContainer,PostImageContainer, PostImage,PostTitle,PostDate,PostDescription} from './components'
 
 const tagsToString=(tags:Array<string>)=>{
     var ret = tags.join(" ");
@@ -19,10 +19,14 @@ const PostCard = ({post}:any) => {
     return (
         <Link href={postUrl}>
             <PostContainer className = {tagsToString(postTags)}>
-                <a>
-                <PostImage src = {postMainImage.fields.file.url}/>
-                <PostTitle>{postTitle}</PostTitle>
-                <PostDate>{postCreationDate}</PostDate>
+                <a style={{display: "block"}}>
+                <PostImageContainer>
+                    <PostImage src = {postMainImage.fields.file.url}/>
+                </PostImageContainer>
+                <PostDescription>
+                    <PostDate>{postCreationDate}</PostDate>
+                    <PostTitle>{postTitle}</PostTitle>
+                </PostDescription>
                 </a>   
             </PostContainer>     
         </Link>
