@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1117,8 +1117,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_emotion_styled__WEBPACK_IMPORTED_MODULE_3__);
 
 
-function _templateObject5() {
+function _templateObject8() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: 'Inconsolata';\n    text-align: left;\n    margin-left: 20%;\n    margin-right: 20%;\n"]);
+
+  _templateObject8 = function _templateObject8() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: flex;\n    flex-direction: row;\n    padding: 10px;\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    padding: 10px;\n    border: 1px solid #e6e6e6;\n    background-color: yellow;\n    border-radius: 5px;\n    font-size: 1em;\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: 100%;\n    height: 100%;\n    opacity: 0.8;\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -1128,7 +1158,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: 100%;\n    height: 100%;\n    opacity: 0.8;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: flex;\n    align-items: flex-start;\n    margin-left: 20%;\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -1148,7 +1178,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    text-align: center;\n    font-family: 'Inconsolata';\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    text-align: center;\n    font-family: 'Inconsolata';\n    margin-left: 30px;\n    "]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -1158,7 +1188,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    position: absolute;\n    margin: 0 auto;\n    left: 0;\n    right: 0;\n    bottom: 10%;\n    width: 60%;\n    color: white;\n    font-size: 4em;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    position: absolute;\n    margin: 0px;\n    left: 0;\n    right: 0;\n    bottom: 0%;\n    width: 60%;\n    color: white;\n    font-size: 4em;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -1175,21 +1205,30 @@ var Post = function Post(data) {
   var postTitle = data.postTitle,
       postMainImage = data.postMainImage,
       postCreationDate = data.postCreationDate,
-      postBody = data.postBody;
+      postBody = data.postBody,
+      postTags = data.postTags;
+  var tags = postTags.map(function (tag) {
+    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(PostTag, {
+      key: tag
+    }, tag);
+  });
   return data && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(PostHeader, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     style: {
       background: "linear-gradient(to bottom, #000000 70%, #e6e6e6 100%)"
     }
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(PostHeaderImage, {
     src: postMainImage.fields.file.url
-  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(PostTitleContainer, null, postTitle)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(PostDateContainer, null, postCreationDate), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(PostBodyContainer, null, postBody));
+  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(PostTitleContainer, null, postTitle)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(PostDescription, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(PostTagsContainer, null, tags), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(PostDateContainer, null, postCreationDate)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(PostBodyContainer, null, postBody));
 };
 
 var PostTitleContainer = _emotion_styled__WEBPACK_IMPORTED_MODULE_3___default.a.h2(_templateObject());
 var PostDateContainer = _emotion_styled__WEBPACK_IMPORTED_MODULE_3___default.a.h3(_templateObject2());
 var PostHeader = _emotion_styled__WEBPACK_IMPORTED_MODULE_3___default.a.div(_templateObject3());
-var PostHeaderImage = _emotion_styled__WEBPACK_IMPORTED_MODULE_3___default.a.img(_templateObject4());
-var PostBodyContainer = _emotion_styled__WEBPACK_IMPORTED_MODULE_3___default.a.p(_templateObject5());
+var PostDescription = _emotion_styled__WEBPACK_IMPORTED_MODULE_3___default.a.div(_templateObject4());
+var PostHeaderImage = _emotion_styled__WEBPACK_IMPORTED_MODULE_3___default.a.img(_templateObject5());
+var PostTag = _emotion_styled__WEBPACK_IMPORTED_MODULE_3___default.a.div(_templateObject6());
+var PostTagsContainer = _emotion_styled__WEBPACK_IMPORTED_MODULE_3___default.a.div(_templateObject7());
+var PostBodyContainer = _emotion_styled__WEBPACK_IMPORTED_MODULE_3___default.a.p(_templateObject8());
 
 Post.getInitialProps = function (context) {
   return context.query.post.fields;
@@ -1199,14 +1238,14 @@ Post.getInitialProps = function (context) {
 
 /***/ }),
 
-/***/ 7:
+/***/ 5:
 /*!******************************!*\
   !*** multi ./pages/post.tsx ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/katherineconnell/Projects/abroad-blog/pages/post.tsx */"./pages/post.tsx");
+module.exports = __webpack_require__(/*! /Users/katieconnell/Desktop/coding/abroad-blog/pages/post.tsx */"./pages/post.tsx");
 
 
 /***/ }),
