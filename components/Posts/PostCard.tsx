@@ -17,19 +17,19 @@ const PostCard = ({post}:any) => {
     const {postTitle,postMainImage,postCreationDate,postUrl,postTags} = post.fields;
     addAllTags(postTags)
     return (
-        <Link href={postUrl}>
-            <PostContainer className = {`filterDiv ${tagsToString(postTags)}`}>
-                <a style={{display: "block"}}>
-                <PostImageContainer>
-                    <PostImage src = {postMainImage.fields.file.url}/>
-                </PostImageContainer>
-                <PostDescription>
-                    <PostDate>{postCreationDate}</PostDate>
-                    <PostTitle>{postTitle}</PostTitle>
-                </PostDescription>
-                </a>   
+            <PostContainer style={{display:"block"}} id={postUrl} className = {`filterDiv ${tagsToString(postTags)}`}>
+                <Link href={postUrl}>
+                    <a style={{display: "block"}}>
+                    <PostImageContainer>
+                        <PostImage src = {postMainImage.fields.file.url}/>
+                    </PostImageContainer>
+                    <PostDescription>
+                        <PostDate>{postCreationDate}</PostDate>
+                        <PostTitle>{postTitle}</PostTitle>
+                    </PostDescription>
+                    </a>   
+                </Link>
             </PostContainer>     
-        </Link>
     )
   };
 

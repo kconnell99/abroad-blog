@@ -32,54 +32,21 @@ var FilterBar = function FilterBar() {
 };
 
 function filterSelection(tag) {
-  console.log(tag);
   var x, i;
   x = document.getElementsByClassName("filterDiv");
-  console.log(x);
-  if (tag == "all") tag = ""; // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
 
   for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(tag) > -1) w3AddClass(x[i], "show");
-  }
-} // Show filtered elements
+    if (!x[i].classList.contains(tag)) {
+      x[i].setAttribute("style", "display: none");
+    } else {
+      x[i].setAttribute("style", "display: block");
+    }
 
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
+    if (tag == "all") {
+      x[i].setAttribute("style", "display: block");
     }
   }
-} // Hide elements that are not selected
-
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-
-  element.className = arr1.join(" ");
-} // Add active class to the current control button (highlight it)
-// var btnContainer = document.getElementById("myBtnContainer");
-// var btns = btnContainer.getElementsByClassName("btn");
-// for (var i = 0; i < btns.length; i++) {
-//   btns[i].addEventListener("click", function() {
-//     var current = document.getElementsByClassName("active");
-//     current[0].className = current[0].className.replace(" active", "");
-//     this.className += " active";
-//   });
-// }
+}
 
 /***/ }),
 
@@ -404,10 +371,14 @@ var PostCard = function PostCard(_ref) {
       postUrl = _post$fields.postUrl,
       postTags = _post$fields.postTags;
   addAllTags(postTags);
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: postUrl
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["PostContainer"], {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["PostContainer"], {
+    style: {
+      display: "block"
+    },
+    id: postUrl,
     className: "filterDiv ".concat(tagsToString(postTags))
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: postUrl
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     style: {
       display: "block"
@@ -21297,7 +21268,7 @@ function _templateObject() {
 
 
 var Index = function Index(data) {
-  return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Posts_components__WEBPACK_IMPORTED_MODULE_9__["PostGridTitle"], null, "Latest Posts"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_FilterBar_FilterBar__WEBPACK_IMPORTED_MODULE_8__["FilterBar"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(HomePageContainer, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Posts_PostGrid__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Posts_components__WEBPACK_IMPORTED_MODULE_9__["PostGridTitle"], null, "Latest Posts", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("button", null, "Filter")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_FilterBar_FilterBar__WEBPACK_IMPORTED_MODULE_8__["FilterBar"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(HomePageContainer, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Posts_PostGrid__WEBPACK_IMPORTED_MODULE_4__["default"], {
     posts: data
   })));
 };

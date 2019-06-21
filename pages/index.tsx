@@ -13,6 +13,7 @@ const Index = (data: any) => {
       <NavBar/>
         <PostGridTitle>
           Latest Posts
+          <button>Filter</button>
         </PostGridTitle>
         <FilterBar/>
         <HomePageContainer>
