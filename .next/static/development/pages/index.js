@@ -32,8 +32,10 @@ var FilterBar = function FilterBar() {
 };
 
 function filterSelection(tag) {
+  console.log(tag);
   var x, i;
   x = document.getElementsByClassName("filterDiv");
+  console.log(x);
   if (tag == "all") tag = ""; // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
 
   for (i = 0; i < x.length; i++) {
@@ -68,7 +70,7 @@ function w3RemoveClass(element, name) {
   }
 
   element.className = arr1.join(" ");
-} // // Add active class to the current control button (highlight it)
+} // Add active class to the current control button (highlight it)
 // var btnContainer = document.getElementById("myBtnContainer");
 // var btns = btnContainer.getElementsByClassName("btn");
 // for (var i = 0; i < btns.length; i++) {
@@ -405,7 +407,7 @@ var PostCard = function PostCard(_ref) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: postUrl
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["PostContainer"], {
-    className: tagsToString(postTags)
+    className: "filterDiv ".concat(tagsToString(postTags))
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     style: {
       display: "block"

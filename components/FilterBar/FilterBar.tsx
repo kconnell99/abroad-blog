@@ -10,8 +10,10 @@ export const FilterBar =()=>{
 }
 
 function filterSelection(tag: string) {
+  console.log(tag)
   var x, i;
   x = document.getElementsByClassName("filterDiv");
+  console.log(x)
   if (tag == "all") tag = "";
   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
@@ -45,7 +47,7 @@ function w3RemoveClass(element:any, name:string) {
   element.className = arr1.join(" ");
 }
 
-// // Add active class to the current control button (highlight it)
+// Add active class to the current control button (highlight it)
 // var btnContainer = document.getElementById("myBtnContainer");
 // var btns = btnContainer.getElementsByClassName("btn");
 // for (var i = 0; i < btns.length; i++) {
