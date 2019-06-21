@@ -477,6 +477,7 @@ var PostCard = function PostCard(_ref) {
     href: postUrl
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     style: {
+      textDecoration: "none",
       display: "block"
     }
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["PostImageContainer"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["PostImage"], {
@@ -570,7 +571,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-weight: 700;\n    font-size: 28px;\n    margin: 0 0 20px 0;\n    text-align: left;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-weight: 700;\n    font-size: 28px;\n    margin: 0 0 20px 0;\n    text-align: left;\n    &:hover{\n        text-decoration: underline;\n\n    }\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -1515,7 +1516,7 @@ function _templateObject() {
 
 
 var Index = function Index(data) {
-  return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Posts_components__WEBPACK_IMPORTED_MODULE_9__["PostGridTitle"], null, "Latest Posts", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("button", null, "Filter")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_FilterBar_FilterBar__WEBPACK_IMPORTED_MODULE_8__["FilterBar"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(HomePageContainer, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Posts_PostGrid__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Posts_components__WEBPACK_IMPORTED_MODULE_9__["PostGridTitle"], null, "Latest Posts"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_FilterBar_FilterBar__WEBPACK_IMPORTED_MODULE_8__["FilterBar"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(HomePageContainer, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Posts_PostGrid__WEBPACK_IMPORTED_MODULE_4__["default"], {
     posts: data
   })));
 };

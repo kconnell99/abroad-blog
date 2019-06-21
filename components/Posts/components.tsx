@@ -47,6 +47,10 @@ export const PostTitle = styled.h2`
     font-size: 28px;
     margin: 0 0 20px 0;
     text-align: left;
+    &:hover{
+        text-decoration: underline;
+
+    }
 `
 export const PostDate = styled.h3`
     text-align: center;

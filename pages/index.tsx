@@ -5,7 +5,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {FilterBar} from '../components/FilterBar/FilterBar';
 import {PostGridTitle} from '../components/Posts/components';
-
+import Link from 'react'
 
 const Index = (data: any) => {
   return(
@@ -13,7 +13,6 @@ const Index = (data: any) => {
       <NavBar/>
         <PostGridTitle>
           Latest Posts
-          <button>Filter</button>
         </PostGridTitle>
         <FilterBar/>
         <HomePageContainer>

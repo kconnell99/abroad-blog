@@ -19,7 +19,7 @@ const PostCard = ({post}:any) => {
     return (
             <PostContainer style={{display:"block"}} id={postUrl} className = {`filterDiv ${tagsToString(postTags)}`}>
                 <Link href={postUrl}>
-                    <a style={{display: "block"}}>
+                    <a style={{textDecoration:"none",display: "block"}}>
                     <PostImageContainer>
                         <PostImage src = {postMainImage.fields.file.url}/>
                     </PostImageContainer>
