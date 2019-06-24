@@ -3,9 +3,8 @@ import PostGrid from '../components/Posts/PostGrid';
 import {makeCMSContentRequest} from '../services/CMSrequest';
 import React from 'react';
 import styled from '@emotion/styled';
-import {FilterBar} from '../components/FilterBar/FilterBar';
 import {PostGridTitle} from '../components/Posts/components';
-import Link from 'react'
+import {FilterButton} from '../components/FilterBar/FilterButton'
 
 const Index = (data: any) => {
   return(
@@ -13,8 +12,8 @@ const Index = (data: any) => {
       <NavBar/>
         <PostGridTitle>
           Latest Posts
+        <FilterButton></FilterButton>
         </PostGridTitle>
-        <FilterBar/>
         <HomePageContainer>
           <PostGrid posts = {data}/>
         </HomePageContainer>

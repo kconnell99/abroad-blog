@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/about.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/photos.js"],{
 
 /***/ "./components/NavBar/NavBar.tsx":
 /*!**************************************!*\
@@ -200,6 +200,66 @@ var NavBarItemText = _emotion_styled__WEBPACK_IMPORTED_MODULE_1__["default"].a(_
 
 /***/ }),
 
+/***/ "./components/PhotoGrid/PhotoGrid.tsx":
+/*!********************************************!*\
+  !*** ./components/PhotoGrid/PhotoGrid.tsx ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PhotoGrid; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components */ "./components/PhotoGrid/components.tsx");
+/* harmony import */ var _Popups_Popups__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Popups/Popups */ "./components/Popups/Popups.tsx");
+
+
+
+
+
+function PhotoGrid(_ref) {
+  var photos = _ref.photos;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
+      photoEnlarged = _useState2[0],
+      setPhotoEnlarged = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null),
+      _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState3, 2),
+      photoChosen = _useState4[0],
+      setPhotoChosen = _useState4[1];
+
+  var togglePhoto = function togglePhoto(photo) {
+    setPhotoEnlarged(!photoEnlarged);
+    setPhotoChosen(photo);
+  };
+
+  var showPic = function showPic(photo) {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Popups_Popups__WEBPACK_IMPORTED_MODULE_3__["PopupImageContent"], {
+      src: photo.fields.photo.fields.file.url
+    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Popups_Popups__WEBPACK_IMPORTED_MODULE_3__["PopupImageCaption"], null, photo.fields.photo.fields.description));
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_2__["PhotoGridContainer"], null, photos && photos.data.map(function (photo) {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_2__["PhotoContainer"], {
+      onClick: function onClick() {
+        return togglePhoto(photo);
+      },
+      key: photo.sys.id
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_2__["ImageContainer"], {
+      src: photo.fields.photo.fields.file.url
+    }), photoEnlarged && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Popups_Popups__WEBPACK_IMPORTED_MODULE_3__["PopupBackgroundContainer"], {
+      onClick: togglePhoto
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Popups_Popups__WEBPACK_IMPORTED_MODULE_3__["PopupImageContainer"], null, photoChosen && showPic(photoChosen))));
+  })));
+}
+
+/***/ }),
+
 /***/ "./components/PhotoGrid/components.tsx":
 /*!*********************************************!*\
   !*** ./components/PhotoGrid/components.tsx ***!
@@ -339,11 +399,10 @@ var PopupImageContent = _emotion_styled__WEBPACK_IMPORTED_MODULE_1__["default"].
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var env = {
-  API_ACCESS_TOKEN: "2BRt1UfcIexpHhwfkP98K0ydPgIB8vATWysOcDrOI78",
-  API_SPACE_KEY: "7nio64lc6xum"
-};
-/* harmony default export */ __webpack_exports__["default"] = (env);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  API_SPACE_KEY: '7nio64lc6xum',
+  API_ACCESS_TOKEN: '2BRt1UfcIexpHhwfkP98K0ydPgIB8vATWysOcDrOI78'
+});
 
 /***/ }),
 
@@ -15642,21 +15701,21 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Fabout.tsx!./":
-/*!**********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Fabout.tsx ***!
-  \**********************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Fphotos.tsx!./":
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Fphotos.tsx ***!
+  \********************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/about", function() {
-      var page = __webpack_require__(/*! ./pages/about.tsx */ "./pages/about.tsx")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/photos", function() {
+      var page = __webpack_require__(/*! ./pages/photos.tsx */ "./pages/photos.tsx")
       if(true) {
-        module.hot.accept(/*! ./pages/about.tsx */ "./pages/about.tsx", function() {
-          if(!next.router.components["/about"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/about.tsx */ "./pages/about.tsx")
-          next.router.update("/about", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/photos.tsx */ "./pages/photos.tsx", function() {
+          if(!next.router.components["/photos"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/photos.tsx */ "./pages/photos.tsx")
+          next.router.update("/photos", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -20926,10 +20985,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/about.tsx":
-/*!*************************!*\
-  !*** ./pages/about.tsx ***!
-  \*************************/
+/***/ "./pages/photos.tsx":
+/*!**************************!*\
+  !*** ./pages/photos.tsx ***!
+  \**************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -20939,11 +20998,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
 /* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/NavBar/NavBar */ "./components/NavBar/NavBar.tsx");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _services_CMSrequest__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/CMSrequest */ "./services/CMSrequest.ts");
-/* harmony import */ var _components_PhotoGrid_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/PhotoGrid/components */ "./components/PhotoGrid/components.tsx");
-/* harmony import */ var _post__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./post */ "./pages/post.tsx");
+/* harmony import */ var _components_PhotoGrid_PhotoGrid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/PhotoGrid/PhotoGrid */ "./components/PhotoGrid/PhotoGrid.tsx");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _services_CMSrequest__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../services/CMSrequest */ "./services/CMSrequest.ts");
 
 
 
@@ -20951,29 +21009,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-var About = function About(data) {
-  var aboutPageTitle = data.aboutPageTitle,
-      aboutPageImage = data.aboutPageImage,
-      aboutPageText = data.aboutPageText;
-  return data && react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_post__WEBPACK_IMPORTED_MODULE_6__["PostTitleContainer"], null, aboutPageTitle), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_PhotoGrid_components__WEBPACK_IMPORTED_MODULE_5__["PhotoContainer"], {
-    style: {
-      margin: "auto",
-      width: "50%",
-      cursor: "auto"
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_PhotoGrid_components__WEBPACK_IMPORTED_MODULE_5__["ImageContainer"], {
-    src: aboutPageImage.fields.file.url
-  })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_post__WEBPACK_IMPORTED_MODULE_6__["PostBodyContainer"], {
-    style: {
-      marginLeft: "40%",
-      marginRight: "40%",
-      marginTop: "5%"
-    }
-  }, aboutPageText));
+var Photos = function Photos(data) {
+  return data && react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_PhotoGrid_PhotoGrid__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    photos: data
+  }));
 };
 
-About.getInitialProps =
+Photos.getInitialProps =
 /*#__PURE__*/
 Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
 /*#__PURE__*/
@@ -20984,11 +21026,13 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
       switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return Object(_services_CMSrequest__WEBPACK_IMPORTED_MODULE_4__["makeCMSEntryRequest"])('2XFjJ40DoLno1olFIeSA78');
+          return Object(_services_CMSrequest__WEBPACK_IMPORTED_MODULE_5__["makeCMSContentRequest"])('photo');
 
         case 2:
           data = _context.sent;
-          return _context.abrupt("return", data.fields);
+          return _context.abrupt("return", {
+            data: data
+          });
 
         case 4:
         case "end":
@@ -20997,146 +21041,7 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
     }
   }, _callee);
 }));
-/* harmony default export */ __webpack_exports__["default"] = (About);
-
-/***/ }),
-
-/***/ "./pages/post.tsx":
-/*!************************!*\
-  !*** ./pages/post.tsx ***!
-  \************************/
-/*! exports provided: PostTitleContainer, PostBodyContainer, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostTitleContainer", function() { return PostTitleContainer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostBodyContainer", function() { return PostBodyContainer; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/NavBar/NavBar */ "./components/NavBar/NavBar.tsx");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @emotion/styled */ "./node_modules/@emotion/styled/dist/styled.browser.esm.js");
-
-
-function _templateObject8() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-family: 'Inconsolata';\n    text-align: left;\n    margin-left: 20%;\n    margin-right: 20%;\n"]);
-
-  _templateObject8 = function _templateObject8() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject7() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: flex;\n    flex-direction: row;\n    padding: 10px;\n"]);
-
-  _templateObject7 = function _templateObject7() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject6() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    padding: 10px;\n    border: 1px solid #e6e6e6;\n    background-color: yellow;\n    border-radius: 5px;\n    font-size: 1em;\n"]);
-
-  _templateObject6 = function _templateObject6() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject5() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: 100%;\n    height: 100%;\n    opacity: 0.8;\n"]);
-
-  _templateObject5 = function _templateObject5() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject4() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: flex;\n    align-items: flex-start;\n    margin-left: 20%;\n"]);
-
-  _templateObject4 = function _templateObject4() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject3() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    position: relative;\n    display: block;\n"]);
-
-  _templateObject3 = function _templateObject3() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    text-align: center;\n    font-family: 'Inconsolata';\n    margin-left: 30px;\n    "]);
-
-  _templateObject2 = function _templateObject2() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    position: absolute;\n    margin: 0px;\n    left: 0;\n    right: 0;\n    bottom: 0%;\n    width: 60%;\n    color: white;\n    font-size: 4em;\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-
-
-
-
-var Post = function Post(data) {
-  var postTitle = data.postTitle,
-      postMainImage = data.postMainImage,
-      postCreationDate = data.postCreationDate,
-      postBody = data.postBody,
-      postTags = data.postTags;
-  var tags = postTags.map(function (tag) {
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(PostTag, {
-      key: tag
-    }, tag);
-  });
-  return data && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(PostHeader, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    style: {
-      background: "linear-gradient(to bottom, #000000 70%, #e6e6e6 100%)"
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(PostHeaderImage, {
-    src: postMainImage.fields.file.url
-  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(PostTitleContainer, null, postTitle)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(PostDescription, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(PostTagsContainer, null, tags), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(PostDateContainer, null, postCreationDate)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(PostBodyContainer, null, postBody));
-};
-
-var PostTitleContainer = _emotion_styled__WEBPACK_IMPORTED_MODULE_3__["default"].h2(_templateObject());
-var PostDateContainer = _emotion_styled__WEBPACK_IMPORTED_MODULE_3__["default"].h3(_templateObject2());
-var PostHeader = _emotion_styled__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject3());
-var PostDescription = _emotion_styled__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject4());
-var PostHeaderImage = _emotion_styled__WEBPACK_IMPORTED_MODULE_3__["default"].img(_templateObject5());
-var PostTag = _emotion_styled__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject6());
-var PostTagsContainer = _emotion_styled__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject7());
-var PostBodyContainer = _emotion_styled__WEBPACK_IMPORTED_MODULE_3__["default"].p(_templateObject8());
-
-Post.getInitialProps = function (context) {
-  return context.query.post.fields;
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Post);
+/* harmony default export */ __webpack_exports__["default"] = (Photos);
 
 /***/ }),
 
@@ -21264,14 +21169,21 @@ function () {
 
 /***/ }),
 
+<<<<<<< HEAD:.next/static/development/pages/about.js
 /***/ 4:
 /*!**************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Fabout.tsx ***!
   \**************************************************************************************************************************************************/
+=======
+/***/ 2:
+/*!************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Fphotos.tsx ***!
+  \************************************************************************************************************************************************/
+>>>>>>> 976420e86b9a41ee687c05a78bbebb23abe48672:.next/static/development/pages/photos.js
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Fabout.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Fabout.tsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Fphotos.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Fphotos.tsx!./");
 
 
 /***/ }),
@@ -21287,5 +21199,10 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
+<<<<<<< HEAD:.next/static/development/pages/about.js
 },[[4,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=about.js.map
+=======
+},[[2,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=photos.js.map
+>>>>>>> 976420e86b9a41ee687c05a78bbebb23abe48672:.next/static/development/pages/photos.js

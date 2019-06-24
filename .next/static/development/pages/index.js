@@ -50,6 +50,35 @@ function filterSelection(tag) {
 
 /***/ }),
 
+/***/ "./components/FilterBar/FilterButton.tsx":
+/*!***********************************************!*\
+  !*** ./components/FilterBar/FilterButton.tsx ***!
+  \***********************************************/
+/*! exports provided: FilterButton */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FilterButton", function() { return FilterButton; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _FilterBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FilterBar */ "./components/FilterBar/FilterBar.tsx");
+
+
+var FilterButton = function FilterButton() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    onClick: function onClick() {
+      return showFilterBar();
+    }
+  }, "Filter"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_FilterBar__WEBPACK_IMPORTED_MODULE_1__["FilterBar"], null));
+};
+
+var showFilterBar = function showFilterBar() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Yuh"));
+};
+
+/***/ }),
+
 /***/ "./components/NavBar/NavBar.tsx":
 /*!**************************************!*\
   !*** ./components/NavBar/NavBar.tsx ***!
@@ -544,11 +573,10 @@ var PostGridTitle = _emotion_styled__WEBPACK_IMPORTED_MODULE_1__["default"].h2(_
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var env = {
-  API_ACCESS_TOKEN: "2BRt1UfcIexpHhwfkP98K0ydPgIB8vATWysOcDrOI78",
-  API_SPACE_KEY: "7nio64lc6xum"
-};
-/* harmony default export */ __webpack_exports__["default"] = (env);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  API_SPACE_KEY: '7nio64lc6xum',
+  API_ACCESS_TOKEN: '2BRt1UfcIexpHhwfkP98K0ydPgIB8vATWysOcDrOI78'
+});
 
 /***/ }),
 
@@ -15941,10 +15969,10 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Findex.tsx!./":
-/*!*****************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Findex.tsx ***!
-  \*****************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Findex.tsx!./":
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Findex.tsx ***!
+  \*************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21244,8 +21272,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @emotion/styled */ "./node_modules/@emotion/styled/dist/styled.browser.esm.js");
-/* harmony import */ var _components_FilterBar_FilterBar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/FilterBar/FilterBar */ "./components/FilterBar/FilterBar.tsx");
-/* harmony import */ var _components_Posts_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Posts/components */ "./components/Posts/components.tsx");
+/* harmony import */ var _components_Posts_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Posts/components */ "./components/Posts/components.tsx");
+/* harmony import */ var _components_FilterBar_FilterButton__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/FilterBar/FilterButton */ "./components/FilterBar/FilterButton.tsx");
 
 
 
@@ -21269,7 +21297,11 @@ function _templateObject() {
 
 
 var Index = function Index(data) {
+<<<<<<< HEAD
   return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Posts_components__WEBPACK_IMPORTED_MODULE_9__["PostGridTitle"], null, "Latest Posts"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_FilterBar_FilterBar__WEBPACK_IMPORTED_MODULE_8__["FilterBar"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(HomePageContainer, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Posts_PostGrid__WEBPACK_IMPORTED_MODULE_4__["default"], {
+=======
+  return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Posts_components__WEBPACK_IMPORTED_MODULE_8__["PostGridTitle"], null, "Latest Posts", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_FilterBar_FilterButton__WEBPACK_IMPORTED_MODULE_9__["FilterButton"], null)), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(HomePageContainer, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Posts_PostGrid__WEBPACK_IMPORTED_MODULE_4__["default"], {
+>>>>>>> 976420e86b9a41ee687c05a78bbebb23abe48672
     posts: data
   })));
 };
@@ -21419,13 +21451,13 @@ function () {
 /***/ }),
 
 /***/ 0:
-/*!*********************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Findex.tsx ***!
-  \*********************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Findex.tsx ***!
+  \*****************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Findex.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Findex.tsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Findex.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Findex.tsx!./");
 
 
 /***/ }),
