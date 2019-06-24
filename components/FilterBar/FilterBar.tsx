@@ -1,5 +1,4 @@
 import {allTags} from '../Posts/PostCard';
-import {useRef} from 'react';
 
 export const FilterBar =()=>{
     var tagArr = Array.from(allTags);
