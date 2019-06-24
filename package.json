@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "nodemon server.ts",
     "build": "next build",
-    "start": "next start -p $PORT"
+    "start": "next start"
+
   },
   "author": "",
   "license": "ISC",
@@ -31,5 +32,8 @@
   },
   "devDependencies": {
     "@types/dotenv": "^6.1.1"
+  },
+  "engines":{
+    "node":"10.15.3"
   }
 }

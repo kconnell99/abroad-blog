@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1238,14 +1238,14 @@ Post.getInitialProps = function (context) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 6:
 /*!******************************!*\
   !*** multi ./pages/post.tsx ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/katieconnell/Desktop/coding/abroad-blog/pages/post.tsx */"./pages/post.tsx");
+module.exports = __webpack_require__(/*! /Users/katherineconnell/Projects/abroad-blog/pages/post.tsx */"./pages/post.tsx");
 
 
 /***/ }),
