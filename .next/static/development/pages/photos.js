@@ -277,7 +277,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject3() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-evenly;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: flex;\n    flex-wrap: wrap;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -287,7 +287,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    max-width: 100%;\n    max-height: 100%;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    object-fit: cover;\n    width: 100%;\n    height: 100%;\n    overflow: hidden;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -297,7 +297,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    border: 5px solid white;\n    max-width: 300px;\n    max-height: 300px;\n    background-color: white;\n    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n    margin-bottom: 12.5px;\n    margin-top: 12.5px;\n    padding: 10px;\n    margin-left: 5px;\n    margin-right: 5px;\n    cursor: pointer;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    max-height:600px;\n    max-width: 600px;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -332,7 +332,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject5() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  max-width: 100%;\n  max-height: 100%;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  object-fit: contain;\n  height: 800px;\n  width: 100%;\n  // max-width: 100%;\n  // max-height: 100%;\n  // // object-fit: cover;\n  // display: block;\n  // margin: auto;\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -352,7 +352,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  border: 5px solid white;\n  max-width: 500px;\n  max-height: 500px;\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  padding: 10px;\n  cursor: pointer;\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  margin-left: -17.5%;\n  margin-top: -15%;\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  float: left;\n  width: 100%;\n  margin: 0;\n  padding-bottom: 10px;\n  background: white;\n  display: contents;\n  // &:nth-child(2n) {\n  //   clear: left;\n  // }\n  \n  // &:nth-child(2n+1){\n  //   margin-right: 0;\n  // }\n//   // border: 5px solid white;\n//   max-width: 700px;\n//   max-height: 700px;\n//   // background-color: white;\n//   // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n//   padding: 10px;\n//   cursor: pointer;\n//   margin: 0px;\n//   text-align: center;\n//   object-fit: contain;\n// //  top: 0;\n//  margin: auto;\n\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -399,10 +399,11 @@ var PopupImageContent = _emotion_styled__WEBPACK_IMPORTED_MODULE_1__["default"].
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  API_SPACE_KEY: '7nio64lc6xum',
-  API_ACCESS_TOKEN: '2BRt1UfcIexpHhwfkP98K0ydPgIB8vATWysOcDrOI78'
-});
+var env = {
+  API_ACCESS_TOKEN: "2BRt1UfcIexpHhwfkP98K0ydPgIB8vATWysOcDrOI78",
+  API_SPACE_KEY: "7nio64lc6xum"
+};
+/* harmony default export */ __webpack_exports__["default"] = (env);
 
 /***/ }),
 
@@ -15701,10 +15702,10 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Fphotos.tsx!./":
-/*!********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Fphotos.tsx ***!
-  \********************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Fphotos.tsx!./":
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Fphotos.tsx ***!
+  \************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21169,21 +21170,14 @@ function () {
 
 /***/ }),
 
-<<<<<<< HEAD:.next/static/development/pages/about.js
-/***/ 4:
-/*!**************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Fabout.tsx ***!
-  \**************************************************************************************************************************************************/
-=======
 /***/ 2:
-/*!************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Fphotos.tsx ***!
-  \************************************************************************************************************************************************/
->>>>>>> 976420e86b9a41ee687c05a78bbebb23abe48672:.next/static/development/pages/photos.js
+/*!****************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Fphotos.tsx ***!
+  \****************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Fphotos.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Fphotos.tsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Fphotos.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Fphotos.tsx!./");
 
 
 /***/ }),
@@ -21199,10 +21193,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-<<<<<<< HEAD:.next/static/development/pages/about.js
-},[[4,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=about.js.map
-=======
 },[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=photos.js.map
->>>>>>> 976420e86b9a41ee687c05a78bbebb23abe48672:.next/static/development/pages/photos.js

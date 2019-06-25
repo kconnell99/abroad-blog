@@ -394,7 +394,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject5() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  max-width: 100%;\n  max-height: 100%;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  object-fit: contain;\n  height: 800px;\n  width: 100%;\n  // max-width: 100%;\n  // max-height: 100%;\n  // // object-fit: cover;\n  // display: block;\n  // margin: auto;\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -414,7 +414,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  border: 5px solid white;\n  max-width: 500px;\n  max-height: 500px;\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  padding: 10px;\n  cursor: pointer;\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  margin-left: -17.5%;\n  margin-top: -15%;\n\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  float: left;\n  width: 100%;\n  margin: 0;\n  padding-bottom: 10px;\n  background: white;\n  display: contents;\n  // &:nth-child(2n) {\n  //   clear: left;\n  // }\n  \n  // &:nth-child(2n+1){\n  //   margin-right: 0;\n  // }\n//   // border: 5px solid white;\n//   max-width: 700px;\n//   max-height: 700px;\n//   // background-color: white;\n//   // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n//   padding: 10px;\n//   cursor: pointer;\n//   margin: 0px;\n//   text-align: center;\n//   object-fit: contain;\n// //  top: 0;\n//  margin: auto;\n\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -670,10 +670,11 @@ var PostGridTitle = _emotion_styled__WEBPACK_IMPORTED_MODULE_1___default.a.h2(_t
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  API_SPACE_KEY: '7nio64lc6xum',
-  API_ACCESS_TOKEN: '2BRt1UfcIexpHhwfkP98K0ydPgIB8vATWysOcDrOI78'
-});
+var env = {
+  API_ACCESS_TOKEN: "2BRt1UfcIexpHhwfkP98K0ydPgIB8vATWysOcDrOI78",
+  API_SPACE_KEY: "7nio64lc6xum"
+};
+/* harmony default export */ __webpack_exports__["default"] = (env);
 
 /***/ }),
 
@@ -1544,11 +1545,7 @@ function _templateObject() {
 
 
 var Index = function Index(data) {
-<<<<<<< HEAD
-  return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Posts_components__WEBPACK_IMPORTED_MODULE_9__["PostGridTitle"], null, "Latest Posts"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_FilterBar_FilterBar__WEBPACK_IMPORTED_MODULE_8__["FilterBar"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(HomePageContainer, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Posts_PostGrid__WEBPACK_IMPORTED_MODULE_4__["default"], {
-=======
   return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Posts_components__WEBPACK_IMPORTED_MODULE_8__["PostGridTitle"], null, "Latest Posts", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_FilterBar_FilterButton__WEBPACK_IMPORTED_MODULE_9__["FilterButton"], null)), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(HomePageContainer, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Posts_PostGrid__WEBPACK_IMPORTED_MODULE_4__["default"], {
->>>>>>> 976420e86b9a41ee687c05a78bbebb23abe48672
     posts: data
   })));
 };
@@ -1704,7 +1701,7 @@ function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/katherineconnell/Projects/abroad-blog/pages/index.tsx */"./pages/index.tsx");
+module.exports = __webpack_require__(/*! /Users/katieconnell/Desktop/coding/abroad-blog/pages/index.tsx */"./pages/index.tsx");
 
 
 /***/ }),

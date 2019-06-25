@@ -14,8 +14,8 @@ export default function PhotoGrid({photos}:any){
     const showPic=(photo:any)=>{
         return(
             <>
-            <PopupImageContent src = {photo.fields.photo.fields.file.url}/>
-            <PopupImageCaption>{photo.fields.photo.fields.description}</PopupImageCaption>
+                <PopupImageContent src = {photo.fields.photo.fields.file.url}/>
+                <PopupImageCaption>{photo.fields.photo.fields.description}</PopupImageCaption>
             </>
         )    
     }

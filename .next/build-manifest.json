@@ -18,13 +18,10 @@
     "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
-<<<<<<< HEAD
-=======
     ],
     "/photos": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
->>>>>>> 976420e86b9a41ee687c05a78bbebb23abe48672
     ]
   }
 }
