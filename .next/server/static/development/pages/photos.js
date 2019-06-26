@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -373,7 +373,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject3() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: flex;\n    flex-wrap: wrap;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -383,7 +383,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    object-fit: cover;\n    width: 100%;\n    height: 100%;\n    overflow: hidden;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    object-fit: cover;\n    width: 100%;\n    height: 100%;\n    overflow: hidden;\n    &:hover{\n        content: \"\";\n        position: absolute;\n        background: white;\n    }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -393,7 +393,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    max-height:600px;\n    max-width: 600px;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    max-height:300px;\n    max-width: 300px;\n    margin: 10px;\n    border: 1px solid white;\n    position: relative;\n   \n    \n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -496,11 +496,10 @@ var PopupImageContent = _emotion_styled__WEBPACK_IMPORTED_MODULE_1___default.a.i
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var env = {
-  API_ACCESS_TOKEN: "2BRt1UfcIexpHhwfkP98K0ydPgIB8vATWysOcDrOI78",
-  API_SPACE_KEY: "7nio64lc6xum"
-};
-/* harmony default export */ __webpack_exports__["default"] = (env);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  API_SPACE_KEY: '7nio64lc6xum',
+  API_ACCESS_TOKEN: '2BRt1UfcIexpHhwfkP98K0ydPgIB8vATWysOcDrOI78'
+});
 
 /***/ }),
 
@@ -1477,14 +1476,14 @@ function () {
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!********************************!*\
   !*** multi ./pages/photos.tsx ***!
   \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/katieconnell/Desktop/coding/abroad-blog/pages/photos.tsx */"./pages/photos.tsx");
+module.exports = __webpack_require__(/*! /Users/katherineconnell/Projects/abroad-blog/pages/photos.tsx */"./pages/photos.tsx");
 
 
 /***/ }),

@@ -71,6 +71,7 @@ const PostTag=styled.div`
     background-color: yellow;
     border-radius: 5px;
     font-size: 1em;
+    color: black;
 `
 
 const PostTagsContainer=styled.div`
@@ -82,6 +83,7 @@ const PostTagsContainer=styled.div`
 export const PostBodyContainer=styled.p`
     font-family: 'Inconsolata';
     text-align: left;
+    font-size: x-large;
     margin-left: 20%;
     margin-right: 20%;
 `

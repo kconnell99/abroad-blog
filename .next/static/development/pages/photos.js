@@ -277,7 +277,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject3() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: flex;\n    flex-wrap: wrap;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -287,7 +287,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    object-fit: cover;\n    width: 100%;\n    height: 100%;\n    overflow: hidden;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    object-fit: cover;\n    width: 100%;\n    height: 100%;\n    overflow: hidden;\n    &:hover{\n        content: \"\";\n        position: absolute;\n        background: white;\n    }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -297,7 +297,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    max-height:600px;\n    max-width: 600px;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    max-height:300px;\n    max-width: 300px;\n    margin: 10px;\n    border: 1px solid white;\n    position: relative;\n   \n    \n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -399,11 +399,10 @@ var PopupImageContent = _emotion_styled__WEBPACK_IMPORTED_MODULE_1__["default"].
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var env = {
-  API_ACCESS_TOKEN: "2BRt1UfcIexpHhwfkP98K0ydPgIB8vATWysOcDrOI78",
-  API_SPACE_KEY: "7nio64lc6xum"
-};
-/* harmony default export */ __webpack_exports__["default"] = (env);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  API_SPACE_KEY: '7nio64lc6xum',
+  API_ACCESS_TOKEN: '2BRt1UfcIexpHhwfkP98K0ydPgIB8vATWysOcDrOI78'
+});
 
 /***/ }),
 
@@ -15702,10 +15701,10 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Fphotos.tsx!./":
-/*!************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Fphotos.tsx ***!
-  \************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Fphotos.tsx!./":
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Fphotos.tsx ***!
+  \********************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21170,14 +21169,14 @@ function () {
 
 /***/ }),
 
-/***/ 2:
-/*!****************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Fphotos.tsx ***!
-  \****************************************************************************************************************************************************/
+/***/ 3:
+/*!************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Fphotos.tsx ***!
+  \************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Fphotos.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Fphotos.tsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Fphotos.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fphotos&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Fphotos.tsx!./");
 
 
 /***/ }),
@@ -21193,5 +21192,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=photos.js.map
