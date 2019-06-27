@@ -1,6 +1,6 @@
 import React from 'react';
 import {useState} from 'react';
-import {ImageContainer,PhotoContainer,PhotoGridContainer} from './components';
+import {ImageContainer,PhotoContainer,PhotoGridContainer,CaptionOverlay} from './components';
 import {PopupImageCaption,PopupBackgroundContainer,PopupImageContainer,PopupImageContent} from '../Popups/Popups';
 
 export default function PhotoGrid({photos}:any){
@@ -21,6 +21,7 @@ export default function PhotoGrid({photos}:any){
     }
     return(
         <>
+            <h2>Photos</h2>
             <PhotoGridContainer>
                 {photos && photos.data.map((photo:any)=>
                     <PhotoContainer onClick={()=>togglePhoto(photo)} key={photo.sys.id}>    
@@ -32,8 +33,7 @@ export default function PhotoGrid({photos}:any){
                             </PopupImageContainer>
                         </PopupBackgroundContainer>
                         }
-                        {/* todo: on click, photo enlarges and caption is shown */}
-                        {/* <p>{photo.fields.photo.fields.description}</p> */}
+                        <CaptionOverlay className="overlay">{photo.fields.photo.fields.description}</CaptionOverlay>
                     </PhotoContainer>
                     )
                 }

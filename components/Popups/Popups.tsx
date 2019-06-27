@@ -30,37 +30,12 @@ export const PopupImageContainer=styled.div`
   padding-bottom: 10px;
   background: white;
   display: contents;
-  // &:nth-child(2n) {
-  //   clear: left;
-  // }
-  
-  // &:nth-child(2n+1){
-  //   margin-right: 0;
-  // }
-//   // border: 5px solid white;
-//   max-width: 700px;
-//   max-height: 700px;
-//   // background-color: white;
-//   // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-//   padding: 10px;
-//   cursor: pointer;
-//   margin: 0px;
-//   text-align: center;
-//   object-fit: contain;
-// //  top: 0;
-//  margin: auto;
-
 `
 export const PopupImageCaption=styled.p`
 
 `
 export const PopupImageContent=styled.img`
   object-fit: contain;
-  height: 800px;
+  height: 600px;
   width: 100%;
-  // max-width: 100%;
-  // max-height: 100%;
-  // // object-fit: cover;
-  // display: block;
-  // margin: auto;
 `

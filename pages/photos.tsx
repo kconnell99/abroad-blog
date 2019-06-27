@@ -6,10 +6,10 @@ import {makeCMSContentRequest} from '../services/CMSrequest';
 const Photos = (data: any) => {
     return(
         data && 
-        <div>
+        <>
             <NavBar/>
             <PhotoGrid photos = {data}/>
-        </div>
+        </>
     )
 }
 

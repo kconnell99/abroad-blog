@@ -7,12 +7,13 @@ import {PostGridTitle} from '../components/Posts/components';
 import {FilterButton} from '../components/FilterBar/FilterButton'
 
 const Index = (data: any) => {
+
   return(
     <>
       <NavBar/>
         <PostGridTitle>
           Latest Posts
-        <FilterButton></FilterButton>
+        <FilterButton tags={data}></FilterButton>
         </PostGridTitle>
         <HomePageContainer>
           <PostGrid posts = {data}/>
