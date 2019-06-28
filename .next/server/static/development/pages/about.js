@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -167,7 +167,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components */ "./components/NavBar/components.tsx");
+/* harmony import */ var _Popups_ModalPopup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Popups/ModalPopup */ "./components/Popups/ModalPopup.jsx");
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components */ "./components/NavBar/components.tsx");
+
 
 
 
@@ -194,31 +196,18 @@ var NavBarItem = function NavBarItem(props) {
   if (linkName === 'home') {
     return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
       href: './'
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["NavBarItemContainer"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["NavBarItemText"], null, props.children))));
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["NavBarItemContainer"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["NavBarItemText"], null, props.children))));
   }
 
   if (linkName === 'contact') {
-    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["NavBarItemContainer"], {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["NavBarItemContainer"], {
       onClick: togglePopup
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["NavBarItemText"], null, props.children)), contactIsShown && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
-      action: "mailto:ktconnell99@gmail.com",
-      method: "POST",
-      enctype: "multipart/form-data",
-      name: "EmailTestForm"
-    }, "Your Name:", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
-      type: "text",
-      name: "VisitorName"
-    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), "Your Comment:", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("textarea", {
-      name: "VisitorComment"
-    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
-      type: "submit",
-      value: "Email This Form"
-    })));
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["NavBarItemText"], null, props.children)), contactIsShown && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Popups_ModalPopup__WEBPACK_IMPORTED_MODULE_3__["ModalPopup"], null));
   }
 
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: '/' + linkName
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["NavBarItemContainer"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["NavBarItemText"], null, props.children))));
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["NavBarItemContainer"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["NavBarItemText"], null, props.children))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (NavBarItem);
@@ -366,6 +355,39 @@ var PhotoContainer = _emotion_styled__WEBPACK_IMPORTED_MODULE_1___default.a.div(
 var ImageContainer = _emotion_styled__WEBPACK_IMPORTED_MODULE_1___default.a.img(_templateObject2());
 var PhotoGridContainer = _emotion_styled__WEBPACK_IMPORTED_MODULE_1___default.a.div(_templateObject3());
 var CaptionOverlay = _emotion_styled__WEBPACK_IMPORTED_MODULE_1___default.a.div(_templateObject4());
+
+/***/ }),
+
+/***/ "./components/Popups/ModalPopup.jsx":
+/*!******************************************!*\
+  !*** ./components/Popups/ModalPopup.jsx ***!
+  \******************************************/
+/*! exports provided: ModalPopup */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ModalPopup", function() { return ModalPopup; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+var ModalPopup = function ModalPopup(body) {
+  var background = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(body);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    action: "mailto:ktconnell99@gmail.com",
+    method: "POST",
+    enctype: "multipart/form-data",
+    name: "EmailTestForm"
+  }, "Your Name:", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    name: "VisitorName"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Your Comment:", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+    name: "VisitorComment"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "submit",
+    value: "Email This Form"
+  })));
+};
 
 /***/ }),
 
@@ -1513,7 +1535,7 @@ function () {
 
 /***/ }),
 
-/***/ 6:
+/***/ 5:
 /*!*******************************!*\
   !*** multi ./pages/about.tsx ***!
   \*******************************/

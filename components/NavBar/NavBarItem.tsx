@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import {useState} from 'react';
+import {ModalPopup} from '../Popups/ModalPopup';
 // import {PopupBackgroundContainer, PopupTextContent} from '../Popups/Popups';
 import {NavBarItemContainer, NavBarItemText} from './components';
 
@@ -37,21 +38,7 @@ const NavBarItem = (props:any) => {
               {props.children}
             </NavBarItemText>
           </NavBarItemContainer>
-        {contactIsShown && 
-          <form action="mailto:ktconnell99@gmail.com"
-          method="POST"
-          enctype="multipart/form-data"
-          name="EmailTestForm">
-            Your Name:<br></br>
-              <input type="text" name="VisitorName"></input>
-              <br></br>
-              Your Comment:
-              <br></br>
-              <textarea name="VisitorComment">
-              </textarea>
-
-              <input type="submit" value="Email This Form"></input>
-          </form>}
+        {contactIsShown && <ModalPopup></ModalPopup>}
         {/* // <PopupBackgroundContainer onClick ={togglePopup}>
         //   <PopupTextContent onClick ={handleChildClick}> */}
               
