@@ -1,7 +1,7 @@
-import styled from '@emotion/styled';
-
+import {FilterContainer,FilterItemButton} from './components';
 
 export const FilterBar =({tags}:any)=>{
+
   var allTags:Set<string>=new Set([]);
 
   const addAllTags=(tags:Array<any>)=>{
@@ -14,12 +14,16 @@ export const FilterBar =({tags}:any)=>{
   var tagArr = Array.from(allTags);
   return(
       <FilterContainer>
-          {tagArr && tagArr.map((tag:string)=><li style={{listStyle:"none"}}><button onClick={()=>filterSelection(tag)} key={tag}>{tag}</button></li>)}
+          {tagArr && tagArr.map((tag:string)=><FilterItemButton onClick={()=>{
+            filterSelection(tag)
+          }
+            } key={tag}>{tag}</FilterItemButton>)}
       </FilterContainer>
   )   
 }
 
-function filterSelection(tag: string) {
+const filterSelection=(tag: string)=>{
+
   var x, i;
   x = document.getElementsByClassName("filterDiv");
   for(i=0;i<x.length;i++){
@@ -35,10 +39,3 @@ function filterSelection(tag: string) {
   }
 }
 
-
-export const FilterContainer=styled.ul`
-  transition: visibility 0s, opacity 0.5s linear;
-  padding: 0;
-  display: flex;
-  margin: 0;
-`

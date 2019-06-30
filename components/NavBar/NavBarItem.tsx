@@ -1,8 +1,7 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Link from 'next/link';
-import {useState} from 'react';
-import {ModalPopup} from '../Popups/ModalPopup';
-// import {PopupBackgroundContainer, PopupTextContent} from '../Popups/Popups';
+import {ModalPopup} from '../Modals/ModalPopup';
+import {Modal,ModalClose} from '../Modals/components';
 import {NavBarItemContainer, NavBarItemText} from './components';
 
 
@@ -32,6 +31,7 @@ const NavBarItem = (props:any) => {
 
   if(linkName === 'contact'){
     return (
+      <>
       <div>
           <NavBarItemContainer onClick = {togglePopup}>
             <NavBarItemText>
@@ -45,6 +45,14 @@ const NavBarItem = (props:any) => {
           {/* </PopupTextContent>
         </PopupBackgroundContainer>} */}
       </div>
+        {contactIsShown && 
+          <Modal>
+              <ModalClose role="button" onClick={()=>setContactIsShown(false)}>X</ModalClose>
+              <ModalPopup></ModalPopup>
+          </Modal>
+          } 
+                </>
+
     );
   }
   return (

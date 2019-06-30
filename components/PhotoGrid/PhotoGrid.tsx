@@ -1,45 +1,45 @@
 import React from 'react';
 import {useState} from 'react';
 import {ImageContainer,PhotoContainer,PhotoGridContainer,CaptionOverlay} from './components';
-import {PopupImageCaption,PopupBackgroundContainer,PopupImageContainer,PopupImageContent} from '../Popups/Popups';
+import {Modal,ModalCaption,ModalClose,ModalContent} from '../Modals/components';
 
 export default function PhotoGrid({photos}:any){
-    const [photoEnlarged,setPhotoEnlarged] = useState(false);
     const [photoChosen,setPhotoChosen] = useState(null);
-    const togglePhoto = (photo:any) => {
-        setPhotoEnlarged(!photoEnlarged);
+    const showModal = (photo:any) => {
         setPhotoChosen(photo);
     }
 
-    const showPic=(photo:any)=>{
-        return(
-            <>
-                <PopupImageContent src = {photo.fields.photo.fields.file.url}/>
-                <PopupImageCaption>{photo.fields.photo.fields.description}</PopupImageCaption>
-            </>
-        )    
+    const displayImage=(photo:any)=>{
+        return photo.fields.photo.fields.file.url;
     }
+
+    const displayCaption=(photo:any)=>{
+        return photo.fields.photo.fields.description;
+    }
+
+    const closeModal=()=>{
+        setPhotoChosen(null);
+    }
+
     return(
         <>
             <h2>Photos</h2>
             <PhotoGridContainer>
                 {photos && photos.data.map((photo:any)=>
-                    <PhotoContainer onClick={()=>togglePhoto(photo)} key={photo.sys.id}>    
+                    <PhotoContainer onClick={()=>showModal(photo)} key={photo.sys.id}>    
                         <ImageContainer src = {photo.fields.photo.fields.file.url}/>
-                        {photoEnlarged && 
-                        <PopupBackgroundContainer onClick={togglePhoto}>
-                            <PopupImageContainer>
-                                {photoChosen && showPic(photoChosen)}
-                            </PopupImageContainer>
-                        </PopupBackgroundContainer>
-                        }
                         <CaptionOverlay className="overlay">{photo.fields.photo.fields.description}</CaptionOverlay>
                     </PhotoContainer>
                     )
                 }
             </PhotoGridContainer>
+            {photoChosen && 
+                <Modal>
+                    <ModalClose role="button" onClick={closeModal}>X</ModalClose>
+                    <ModalContent src={displayImage(photoChosen)}></ModalContent>
+                    <ModalCaption>{displayCaption(photoChosen)}</ModalCaption>
+                </Modal>
+            } 
         </>
-        
     )
 }
-

@@ -33,7 +33,6 @@ const HomePageContainer=styled.div`
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  // background-color: #bccbde;
   height: 100vh;
   width: 100 vw;
   `

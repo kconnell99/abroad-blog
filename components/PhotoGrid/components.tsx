@@ -6,18 +6,14 @@ export const PhotoContainer=styled.div`
     margin: 10px;
     border: 1px solid white;
     position: relative;
-    &:hover{
-        
-    }
-   
+    cursor: pointer;
 `
 export const ImageContainer = styled.img`
     object-fit: cover;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    display: block;
-    
+    display: block; 
 `
 
 export const PhotoGridContainer=styled.div`

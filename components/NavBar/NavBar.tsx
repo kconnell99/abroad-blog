@@ -22,7 +22,6 @@ export default function NavBar(){
           />
         <Global styles={css`*{
             color: black;
-            // color: hotpink!important;
             font-family: 'Josefin Sans', arial, sans-serif;
         }`}></Global>
           <FullNavBarContainer>

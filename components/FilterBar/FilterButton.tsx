@@ -1,6 +1,6 @@
 import { FilterBar } from "./FilterBar";
 import { useState } from "react";
-import styled from '@emotion/styled';
+import {FilterBarButton} from './components';
 
 
 export const FilterButton = ({tags}:any) =>{
@@ -13,16 +13,10 @@ export const FilterButton = ({tags}:any) =>{
 
     return(
         <>
-            <FilterButtonContainer onClick={()=>setIsFilterBarShown(!isFilterBarShown)}>Filter</FilterButtonContainer>   
+            <FilterBarButton onClick={handleClick}>Filter</FilterBarButton>   
                 {
-                    isFilterBarShown && <FilterBar id="filterBar"tags={tags}></FilterBar>
+                    isFilterBarShown && <FilterBar tags={tags}></FilterBar>
                 }
         </> 
     )
 }
-
-
-const FilterButtonContainer=styled.button`
-    display: block;
-    margin-top: 5px;
-`
