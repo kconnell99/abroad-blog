@@ -16074,10 +16074,10 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Findex.tsx!./":
-/*!*****************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Findex.tsx ***!
-  \*****************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Findex.tsx!./":
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Findex.tsx ***!
+  \*************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21449,7 +21449,7 @@ var HomePageContainer = _emotion_styled__WEBPACK_IMPORTED_MODULE_7__["default"].
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "client", function() { return client; });
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "client", function() { return client; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "makeCMSEntryRequest", function() { return makeCMSEntryRequest; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "makeCMSContentRequest", function() { return makeCMSContentRequest; });
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
@@ -21462,11 +21462,12 @@ __webpack_require__.r(__webpack_exports__);
 
 var contentful = __webpack_require__(/*! contentful */ "./node_modules/contentful/dist/es-modules/contentful.js");
 
+var envVars = _env__WEBPACK_IMPORTED_MODULE_2__["default"].API_SPACE_KEY ? _env__WEBPACK_IMPORTED_MODULE_2__["default"] : process.env;
 var client = contentful.createClient({
-  space: _env__WEBPACK_IMPORTED_MODULE_2__["default"].API_SPACE_KEY,
+  space: envVars.API_SPACE_KEY,
   environment: 'master',
   // defaults to 'master' if not set
-  accessToken: _env__WEBPACK_IMPORTED_MODULE_2__["default"].API_ACCESS_TOKEN
+  accessToken: envVars.API_ACCESS_TOKEN
 });
 var makeCMSEntryRequest =
 /*#__PURE__*/
@@ -21550,18 +21551,7 @@ function () {
     return _ref2.apply(this, arguments);
   };
 }();
-
-/***/ }),
-
-/***/ 0:
-/*!*********************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Findex.tsx ***!
-  \*********************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Findex.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkatieconnell%2FDesktop%2Fcoding%2Fabroad-blog%2Fpages%2Findex.tsx!./");
-
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
 
@@ -21576,6 +21566,18 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absol
 
 /***/ }),
 
+/***/ 2:
+/*!*****************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Findex.tsx ***!
+  \*****************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Findex.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Findex.tsx!./");
+
+
+/***/ }),
+
 /***/ "dll-reference dll_6dc2816e14fab51b8269":
 /*!*******************************************!*\
   !*** external "dll_6dc2816e14fab51b8269" ***!
@@ -21587,5 +21589,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

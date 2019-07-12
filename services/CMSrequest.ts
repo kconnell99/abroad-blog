@@ -2,10 +2,12 @@ import env from '../env'
 
 const contentful = require('contentful')
 
+const envVars = env.API_SPACE_KEY ? env : process.env;
+
 export const client = contentful.createClient({
-    space: env.API_SPACE_KEY,
+    space: envVars.API_SPACE_KEY,
     environment: 'master', // defaults to 'master' if not set
-    accessToken: env.API_ACCESS_TOKEN
+    accessToken: envVars.API_ACCESS_TOKEN
     })
 
 export const makeCMSEntryRequest = async(entryID:any) => {

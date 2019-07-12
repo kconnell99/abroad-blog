@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1425,11 +1425,12 @@ __webpack_require__.r(__webpack_exports__);
 
 var contentful = __webpack_require__(/*! contentful */ "contentful");
 
+var envVars = _env__WEBPACK_IMPORTED_MODULE_2__["default"].API_SPACE_KEY ? _env__WEBPACK_IMPORTED_MODULE_2__["default"] : process.env;
 var client = contentful.createClient({
-  space: _env__WEBPACK_IMPORTED_MODULE_2__["default"].API_SPACE_KEY,
+  space: envVars.API_SPACE_KEY,
   environment: 'master',
   // defaults to 'master' if not set
-  accessToken: _env__WEBPACK_IMPORTED_MODULE_2__["default"].API_ACCESS_TOKEN
+  accessToken: envVars.API_ACCESS_TOKEN
 });
 var makeCMSEntryRequest =
 /*#__PURE__*/
@@ -1516,14 +1517,14 @@ function () {
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!********************************!*\
   !*** multi ./pages/photos.tsx ***!
   \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/katieconnell/Desktop/coding/abroad-blog/pages/photos.tsx */"./pages/photos.tsx");
+module.exports = __webpack_require__(/*! /Users/katherineconnell/Projects/abroad-blog/pages/photos.tsx */"./pages/photos.tsx");
 
 
 /***/ }),
