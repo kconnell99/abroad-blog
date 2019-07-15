@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nodemon server.ts",
     "build": "next build",
-    "start": "NODE_ENV=production next build && ts-node --project tsconfig.server.json server/index.ts -p $PORT"
+    "start": "next build && NODE_ENV=production ts-node --project tsconfig.server.json server/index.ts -p $PORT"
 
   },
   "author": "",
