@@ -12380,7 +12380,7 @@ Post.getInitialProps = function (context) {
 
 /***/ }),
 
-/***/ 0:
+/***/ 3:
 /*!********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fpost&absolutePagePath=%2FUsers%2Fkatherineconnell%2FProjects%2Fabroad-blog%2Fpages%2Fpost.tsx ***!
   \********************************************************************************************************************************************/
@@ -12403,5 +12403,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=post.js.map
