@@ -9,7 +9,7 @@ const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
-const PORT = dev ? 3000 : process.env.PORT;
+const PORT = dev ? 3000: process.env.PORT || 3000;
 app.prepare().then(async () => {
   const server = express();
   server.use(compression());
@@ -38,6 +38,8 @@ app.prepare().then(async () => {
     }
     else{
       const post = allPosts.find((post:any)=>post.fields.postUrl===req.params.slug);
+      // console.log(post);
+
       if(!!post){
         app.render(req, res, '/post',{post})
         return
