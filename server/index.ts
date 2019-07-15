@@ -28,7 +28,7 @@ app.prepare().then(async () => {
 
     if(!dev){
       const serverURLLong = req.params.slug.split("/");
-      const serverURL = "/"+serverURLLong.slice(-1)[0]
+      const serverURL = serverURLLong.slice(-1)[0]
       const post = allPosts.find((post:any)=>post.fields.postUrl===serverURL);
       if(!!post){
         app.render(req, res, '/post',{post})
