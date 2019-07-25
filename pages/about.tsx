@@ -20,8 +20,8 @@ const About = (data: any) => {
             </PostHeader>
                 
                 <PostBodyContainer style={{
-                    marginLeft: "40%",
-                    marginRight: "40%",
+                    marginLeft: "20%",
+                    marginRight: "20%",
                     marginTop:"5%"
                 }}>
                     {aboutPageText}
