@@ -26,7 +26,7 @@ export default function NavBar(){
         }`}></Global>
           <FullNavBarContainer>
             <Link href ={'./'}>
-                <NavBarTitle>Blog title</NavBarTitle>
+                <NavBarTitle>Churros y Charlas</NavBarTitle>
             </Link>
             <NavBarItemsContainer>
                 {layoutOptions} 
