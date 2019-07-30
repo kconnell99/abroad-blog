@@ -18,6 +18,7 @@ export default class MyApp extends App {
     return (
       <>
         <Head>
+          <title>Churros y Charlas</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <Container>

@@ -409,7 +409,7 @@ function NavBar() {
     styles: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["css"])(_templateObject())
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["FullNavBarContainer"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: './'
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["NavBarTitle"], null, "Blog title")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["NavBarItemsContainer"], null, layoutOptions)));
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["NavBarTitle"], null, "Churros y Charlas")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["NavBarItemsContainer"], null, layoutOptions)));
 }
 
 /***/ }),
